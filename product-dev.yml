@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: product
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.142.129:3306/springcloud_sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
